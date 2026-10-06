@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791265681684,
+      "tag": "0000_create_profiles_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791306801896,
+      "tag": "0001_racket_sports_only",
+      "breakpoints": true
+    }
+  ]
+}
