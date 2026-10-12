@@ -141,7 +141,7 @@ function AuthPage() {
       city: parsed.data.city,
       sport: parsed.data.sport,
       skill_level: parsed.data.skill_level,
-      contact_email: parsed.data.contact_email || parsed.data.email,
+      contact_email: parsed.data.contact_email || null,
     });
     setRegBusy(false);
 
@@ -344,11 +344,11 @@ function AuthPage() {
                 )}
                 {regField(
                   "reg-contact",
-                  "Public contact email (optional — defaults to your login email)",
+                  "Public contact email (optional — your login email stays private)",
                   <Input
                     id="reg-contact"
                     type="email"
-                    placeholder="Shown on your public profile"
+                    placeholder="Leave blank to show no email publicly"
                     value={reg.contact_email}
                     onChange={(e) => setReg({ ...reg, contact_email: e.target.value })}
                     aria-describedby={regErrors["contact_email"] ? "reg-contact-error" : undefined}
