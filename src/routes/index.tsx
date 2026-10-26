@@ -208,7 +208,7 @@ function BrowsePage() {
                     <a
                       href={`mailto:${p.contact_email}`}
                       className="inline-flex items-center gap-1.5 font-medium text-primary underline underline-offset-4"
-                      aria-label={`Email ${p.display_name}`}
+                      aria-label={`Email ${p.display_name}: ${p.contact_email}`}
                     >
                       <Mail className="h-3.5 w-3.5" aria-hidden="true" />
                       {p.contact_email}
